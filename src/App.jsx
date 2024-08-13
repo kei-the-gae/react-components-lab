@@ -1,3 +1,5 @@
+import WeatherForecast from "./components/WeatherForecast/WeatherForecast.jsx";
+
 const weatherForecasts = [
   {
     day: 'Mon',
@@ -43,10 +45,13 @@ const App = () => {
       <h1>Local Weather</h1>
       <section>
         {/* Weather data here */}
+        {weatherForecasts.map((forecast, i) => (
+          <WeatherForecast key={i} {...forecast} />
+        ))}
       </section>
     </>
 
   );
-}
+};
 
-export default App
+export default App;
