@@ -1,4 +1,5 @@
 import WeatherForecast from "./components/WeatherForecast/WeatherForecast.jsx";
+import './App.css'
 
 const weatherForecasts = [
   {
